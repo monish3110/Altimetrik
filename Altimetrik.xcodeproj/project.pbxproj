@@ -21,6 +21,7 @@
 		D2FB1CFD2B9916D300326C02 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2FB1CFC2B9916D300326C02 /* NetworkManager.swift */; };
 		D2FB1D032B99199700326C02 /* PostListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2FB1D022B99199700326C02 /* PostListViewModel.swift */; };
 		D2FB1D062B99277600326C02 /* String-Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2FB1D052B99277600326C02 /* String-Extension.swift */; };
+		D2FB1D0B2B99D4A500326C02 /* MockPostsData.json in Resources */ = {isa = PBXBuildFile; fileRef = D2FB1D0A2B99D4A500326C02 /* MockPostsData.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +59,7 @@
 		D2FB1CFC2B9916D300326C02 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		D2FB1D022B99199700326C02 /* PostListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostListViewModel.swift; sourceTree = "<group>"; };
 		D2FB1D052B99277600326C02 /* String-Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String-Extension.swift"; sourceTree = "<group>"; };
+		D2FB1D0A2B99D4A500326C02 /* MockPostsData.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = MockPostsData.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -165,6 +167,7 @@
 		D2FB1CFA2B99168F00326C02 /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
+				D2FB1D092B99D48000326C02 /* MockData */,
 				D2FB1D042B99275E00326C02 /* Extensions */,
 				D2FB1CFB2B9916BB00326C02 /* Managers */,
 			);
@@ -218,6 +221,14 @@
 				D2FB1D052B99277600326C02 /* String-Extension.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		D2FB1D092B99D48000326C02 /* MockData */ = {
+			isa = PBXGroup;
+			children = (
+				D2FB1D0A2B99D4A500326C02 /* MockPostsData.json */,
+			);
+			path = MockData;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -325,6 +336,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D2FB1CCE2B98D51700326C02 /* Preview Assets.xcassets in Resources */,
+				D2FB1D0B2B99D4A500326C02 /* MockPostsData.json in Resources */,
 				D2FB1CCB2B98D51700326C02 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -28,4 +28,18 @@ final class NetworkManager {
         return postData.posts
     }
     
+    func mockFetchPostData(filename fileName: String) async throws -> [PostDetailModel] {
+        if let url = Bundle.main.url(forResource: fileName, withExtension: "json") {
+                do {
+                    let data = try Data(contentsOf: url)
+                    let decoder = JSONDecoder()
+                    let jsonData = try decoder.decode(PostsModel.self, from: data)
+                    return jsonData.posts
+                } catch {
+                    print("error:\(error)")
+                }
+            }
+        throw NSError()
+    }
+    
 }
